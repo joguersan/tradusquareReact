@@ -1,9 +1,12 @@
+import Navbar from './components/navbar/Navbar';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  debugger
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -15,7 +18,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <button className='btn btn-outline-light'>
+            <i className="bi bi-controller me-2"></i>Learn React
+          </button>
         </a>
       </header>
     </div>
