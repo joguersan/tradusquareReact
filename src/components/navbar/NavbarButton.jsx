@@ -9,10 +9,10 @@ const buttons = [
 ]
 
 const RenderButtons = () => (
-  buttons.map(button => NavbarButton(button.icon, button.text, button.href))
+  buttons.map(button => <NavbarButton icon={button.icon} text={button.text} href={button.href} key={button.text}/>)
 )
 
-const NavbarButton = (icon, text, href) => (
+const NavbarButton = ({ icon, text, href }) => (
   <li className='nav-item' key={text}>
     <a className='nav-link' href={href}>
       <i className={`bi bi-${ icon } me-2`}></i>{text}

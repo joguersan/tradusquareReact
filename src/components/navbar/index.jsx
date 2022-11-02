@@ -6,7 +6,7 @@ import './Navbar.css'
 
 const WebNavbar = () => (
   <Navbar bg="dark" expand="lg" variant="dark">
-    <Container fluid nameClass="mx-3">
+    <Container fluid className="mx-3">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
