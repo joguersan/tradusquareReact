@@ -6,17 +6,13 @@ import './Navbar.css'
 
 const WebNavbar = () => (
   <Navbar bg="dark" expand="lg" variant="dark">
-    <Container fluid className="mx-3">
+    <Container fluid className="mx-lg-3">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Navbar.Brand href="#">
-              <img
-                className="h-vh-5"
-                loading="lazy"
-                src="/images/logos/LogoTS.webp"
-                alt="Logo de TraduSquare"
-              />
+              <img className="h-vh-5" loading="lazy"
+                src="/images/logos/LogoTS.webp" alt="Logo de TraduSquare" />
             </Navbar.Brand>
             <RenderButtons />
           </Nav>
