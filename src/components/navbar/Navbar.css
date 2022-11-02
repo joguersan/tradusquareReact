@@ -1,0 +1,13 @@
+.navbar .nav-link {
+  border-bottom: 5px rgba(0,0,0,0) solid;
+  border-radius: 0 0 2px 2px;
+}
+
+.navbar .nav-link:hover {
+  border-color:blue;
+  transition: border-bottom 0.7s;
+}
+
+.navbar .nav-link.active {
+  border-color:red;
+}

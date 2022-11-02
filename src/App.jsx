@@ -1,10 +1,10 @@
-import Navbar from './components/Navbar';
+import WebNavbar from './components/Navbar';
 import logo from './logo.svg';
 import './App.css';
 
 const App = () => (
   <div className="App">
-    <Navbar />
+    <WebNavbar />
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
