@@ -1,5 +1,5 @@
-import { Row, Col } from 'react-bootstrap';
 import MediaIcons from '../SocialMedia';
+import TSModal from '../Bootstrap/Modal';
 import './Footer.css'
 
 const FooterLinks = [
