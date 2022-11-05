@@ -18,11 +18,8 @@ const Footer = () => (
     </section>
     <Row className="align-items-center px-2">
       <Col sm md="6">
-      <small className="text-danger">Todos los proyectos alojados en esta página son realizados por fans para fans sin ánimo de lucro.<br />
-        En esta página únicamente aparecerá contenido sin Copyright y parches para aplicar a copias de juego originales.</small>
-      </Col>
-      <Col sm md="6">
-        
+        <small className="text-danger">Todos los proyectos alojados en esta página son realizados por fans para fans sin ánimo de lucro.<br />
+          En esta página únicamente aparecerá contenido sin Copyright y parches para aplicar a copias de juego originales.</small>
       </Col>
     </Row>
     <section className="justify-content-between align-items-center p-3 footer-copy d-flex">
@@ -37,8 +34,8 @@ const Footer = () => (
 const RenderButtonsFooter = () => (
   MediaIcons.map(button =>
     <div key={button.text} className="footer-social-icon">
-      <a className="me-4" href={button.href} target="_blank" title={button.text}>
-        <i className={`i bi bi-${ button.icon }`}></i>
+      <a className="me-4" href={button.href} target="_blank" rel="noreferrer" title={button.text}>
+        <i className={`i bi bi-${button.icon}`}></i>
       </a>
     </div>
   )
