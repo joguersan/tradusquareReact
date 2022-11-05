@@ -1,27 +1,25 @@
 import WebNavbar from './components/Navbar';
 import Footer from './components/Footer';
-import logo from './logo.svg';
+import RenderSidebar from './components/Sidebar';
+import TSCarousel from './components/Bootstrap/Carousel';
 import './App.css';
+import { Col, Row } from 'react-bootstrap';
 
 const App = () => (
-  <div className="App">
+  <div className="App bg-dark">
     <WebNavbar />
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button className='btn btn-outline-light'>
-          <i className="bi bi-controller me-2"></i>Learn React
-        </button>
-      </a>
-    </header>
+    <Row>
+      <Col sm="4" className="mx-auto carousel-container" >
+        <TSCarousel />
+      </Col>
+    </Row>
+    <Row className="p-3 bg-white mt-3">
+      
+      <Col sm md="8" />
+      <Col sm md="4">
+        <RenderSidebar />
+      </Col>
+    </Row>
     <Footer />
   </div>
 )

@@ -31,14 +31,17 @@ const getOverlayFunction = (overlayType) => {
 
 const TriggerOverlay = ({ overlayType, overlayElement, placement, toggle }) => {
   var type = getOverlayFunction(overlayType);
-  return (<OverlayTrigger
-    delay={{ show: 250, hide: 400 }}
-    trigger={toggle}    
-    placement={placement}
-    overlay={type}
-  >
-    {overlayElement}
-  </OverlayTrigger>)
+
+  return (
+    <OverlayTrigger
+      delay={{ show: 250, hide: 400 }}
+      trigger={toggle}
+      placement={placement}
+      overlay={type}
+    >
+      {overlayElement}
+    </OverlayTrigger>
+  )
 };
 
 export default TriggerOverlay

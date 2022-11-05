@@ -21,11 +21,11 @@ const WebNavbar = () => (
           <RenderButtons />
           <TSModal title="Inicia sesión" content={<UserLogin />} />
           <TriggerOverlay
-            overlayType="popover"
-            toggle = "hover"
+            overlayType="tooltip"
+            toggle={['hover', 'focus']} //hover, focus, click o array con varias. Ej: 'click' o {['hover', 'focus']} 
             overlayElement={buttonOverlay}
             placement="bottom"
-            >
+          >
           </TriggerOverlay>
         </Nav>
       </Navbar.Collapse>

@@ -1,0 +1,22 @@
+@property --myColor1 {
+  syntax: '<color>';
+  initial-value: rgba(0, 255, 195, 1);
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: '<color>';
+  initial-value: rgba(255, 191, 0, 1);
+  inherits: false;
+}
+
+.gradient-primary {
+  background: rgb(0, 255, 195);
+  background: linear-gradient(16deg, var(--myColor1), var(--myColor2));
+  transition: --myColor1 1s, --myColor2 1s;
+}
+
+.gradient-primary:hover {
+  --myColor1: rgba(255, 191, 0, 1);
+  --myColor2: rgba(0, 255, 195, 1);
+}
