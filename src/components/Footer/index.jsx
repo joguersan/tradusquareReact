@@ -1,6 +1,4 @@
 import MediaIcons from '../SocialMedia';
-import TSModal from '../Bootstrap/Modal';
-import UserLogin from '../Login'
 import './Footer.css'
 
 const FooterLinks = [
@@ -26,7 +24,6 @@ const Footer = () => (
       </span>
       <span><a className="text-white" href="https://tradusquare.es/">tradusquare</a> 2017 - 2022</span>
     </section>
-    <TSModal title="Inicia sesión" content={<UserLogin />} />
   </footer>
 )
 

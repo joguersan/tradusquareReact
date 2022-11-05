@@ -10,7 +10,7 @@ const TSModal = ({ title, content, footer}) => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary mt-3 mt-lg-0" onClick={handleShow}>
         <i className="bi bi-box-arrow-in-left me-2"></i>Iniciar sesión
       </Button>
 
