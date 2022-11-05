@@ -22,9 +22,7 @@ const App = () => (
         </button>
       </a>
     </header>
-    <footer>
-      <Footer />
-    </footer>
+    <Footer />
   </div>
 )
 
