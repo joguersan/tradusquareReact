@@ -1,4 +1,5 @@
 import WebNavbar from './components/Navbar';
+import Footer from './components/Footer';
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,6 +22,9 @@ const App = () => (
         </button>
       </a>
     </header>
+    <footer>
+      <Footer />
+    </footer>
   </div>
 )
 

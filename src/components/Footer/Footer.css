@@ -1,0 +1,13 @@
+footer a {
+  color: white;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(41, 212, 201);
+  transition: color 0.5s;
+}
+
+.footer-copy {
+  background-color: rgba(0, 0, 0, 0.2);
+}
