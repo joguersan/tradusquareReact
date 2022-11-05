@@ -11,7 +11,7 @@ const TSModal = ({ title, content, footer}) => {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Launch static backdrop modal
+        <i className="bi bi-box-arrow-in-left me-2"></i>Iniciar sesión
       </Button>
 
       <Modal
@@ -19,6 +19,8 @@ const TSModal = ({ title, content, footer}) => {
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
+        centered
+        size="lg"
       >
         <Modal.Header closeButton>
           <Modal.Title>{title}</Modal.Title>
