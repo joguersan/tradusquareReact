@@ -1,21 +1,21 @@
-import MediaIcons from "../SocialMedia";
+import { mediaIcons } from "../constants";
 import './Sidebar.css'
 const FollowUs = () => (
-  <>
+  <div id="sidebar-social">
     <h2 className="text-primary">
       <i className="bi bi-hand-thumbs-up-fill me-2"></i>¡Síguenos!
     </h2>
-    <div className="d-flex justify-content-center gradient-primary rounded p-3">
+    <div id="social-icons" className="d-flex justify-content-center gradient-primary glassmorphing rounded p-3">
       <RenderSocialIcons />
     </div>
     <h2 className="text-primary mt-4">
-    <i className="bi bi-star-fill me-2"></i>¿Conoces esta traducción? 
+      <i className="bi bi-star-fill me-2"></i>¿Conoces esta traducción?
     </h2>
-  </>
+  </div>
 );
 
 const RenderSocialIcons = () => (
-  MediaIcons.map(button =>
+  mediaIcons.map(button =>
     <SocialIcon icon={button.icon} href={button.href} key={button.text} />
   )
 )

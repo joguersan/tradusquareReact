@@ -1,11 +1,5 @@
-import MediaIcons from '../SocialMedia';
+import { mediaIcons, footerLinks } from '../constants';
 import './Footer.css'
-
-const FooterLinks = [
-  { text: 'Política de privacidad', href: '#' },
-  { text: 'Contactar', href: '#' },
-  { text: '¿Quieres participar en un proyecto?', href: '#' }
-]
 
 const Footer = () => (
   <footer className="bg-dark text-light">
@@ -28,7 +22,7 @@ const Footer = () => (
 )
 
 const RenderSocialFooter = () => (
-  MediaIcons.map(button =>
+  mediaIcons.map(button =>
     <div key={button.text} className="footer-social-icon">
       <a className="me-4" href={button.href} target="_blank" rel="noreferrer" title={button.text}>
         <i className={`i bi bi-${button.icon}`}></i>
@@ -38,7 +32,7 @@ const RenderSocialFooter = () => (
 )
 
 const RenderLinksFooter = () => (
-  FooterLinks.map(link =>
+  footerLinks.map(link =>
     <span key={link.text}>
       <a href={link.href}>
         <small>{link.text}</small>

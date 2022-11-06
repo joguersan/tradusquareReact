@@ -1,18 +1,36 @@
 .h-vh-5 {
-  max-height:5vh;
+  max-height: 5vh;
 }
 
 .mt-n1 {
   margin-top: -0.25rem !important;
 }
+
 .mt-n3 {
   margin-top: -1rem !important;
 }
+
 .mt-n5 {
   margin-top: -5rem !important;
 }
 
 .triangle-up {
   border-left: 100vw transparent solid;
-  border-bottom: 10vw white solid;
+  border-bottom: 15vh white solid;
+}
+
+.gradient-dark {
+  background: rgb(141, 141, 141);
+  background: linear-gradient(0deg, rgb(141, 141, 141) 0%, rgba(33, 37, 41, 1) 100%);
+}
+
+.shadow-down {
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  transform: rotateZ(2deg);
+  transition: transform 0.5s;
+}
+
+.shadow-down:hover, .shadow-down:active {
+  transform: rotateZ(0deg);
+  transition: transform 0.5s;
 }
