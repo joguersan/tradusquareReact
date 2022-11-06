@@ -2,13 +2,6 @@
   max-height:5vh;
 }
 
-.carousel-container {
-  background-color: white;
-  border: 0 0 0 0;
-  border-radius: 25px;
-  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
-}
-
 .mt-n1 {
   margin-top: -0.25rem !important;
 }
@@ -17,4 +10,9 @@
 }
 .mt-n5 {
   margin-top: -5rem !important;
+}
+
+.triangle-up {
+  border-left: 100vw transparent solid;
+  border-bottom: 10vw white solid;
 }

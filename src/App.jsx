@@ -12,9 +12,9 @@ const App = () => (
       <Col sm="4" className="mx-auto carousel-container" >
         <TSCarousel />
       </Col>
+      <div class="triangle-up mt-n5"></div>
     </Row>
-    <Row className="p-3 bg-white mt-3">
-      
+    <Row className="p-3 bg-white">
       <Col sm md="8" />
       <Col sm md="4">
         <RenderSidebar />
