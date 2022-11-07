@@ -25,3 +25,21 @@ export const navbarButtons = [
   { icon: 'moon-stars-fill', text: 'Amala', href: '#' },
   { icon: 'stickies-fill', text: 'Tablón  de misiones', href: '#' },
 ]
+
+export const mainCarousel = [
+  {
+    image: 'https://images4.alphacoders.com/641/641485.jpg',
+    captionTitle: 'Lanzamiento Corpse Party: Book of Shadows',
+    captionSubtitle: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
+  },
+  {
+    image: 'https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_HackGuLastRecode.jpg',
+    captionTitle: 'Se cancela el .hack G.U., chavales.',
+    captionSubtitle: 'Siento decirlo por aquí.'
+  },
+  {
+    image: 'images/CorpsePartyBookOfShadows.webp',
+    captionTitle: 'Lanzamiento Corpse Party: Book of Shadows. Que nooooo',
+    captionSubtitle: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
+  }
+]

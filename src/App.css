@@ -26,11 +26,23 @@
 
 .shadow-down {
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  
+}
+.tilt-down {
   transform: rotateZ(2deg);
   transition: transform 0.5s;
 }
+.tilt-down:hover, .tilt-down:active {
+  transform: rotateZ(0deg);
+  transition: transform 0.5s;
+}
 
-.shadow-down:hover, .shadow-down:active {
+.tilt-down .carousel-caption {
+  transform: rotateZ(-2deg);
+  transition: transform 0.5s;
+}
+
+.tilt-down:hover .carousel-caption {
   transform: rotateZ(0deg);
   transition: transform 0.5s;
 }

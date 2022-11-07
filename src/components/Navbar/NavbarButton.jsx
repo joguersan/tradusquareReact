@@ -7,7 +7,12 @@ import { navbarButtons } from '../constants';
 
 const RenderButtons = () => (
   navbarButtons.map(button =>
-    <NavbarButton icon={button.icon} text={button.text} href={button.href} key={button.text} />
+    <NavbarButton
+      icon={button.icon}
+      text={button.text}
+      href={button.href}
+      key={button.text}
+    />
   )
 )
 

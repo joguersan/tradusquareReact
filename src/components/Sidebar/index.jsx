@@ -1,17 +1,26 @@
+import { Row, Col } from 'react-bootstrap'
 import { mediaIcons } from "../constants";
 import './Sidebar.css'
 const FollowUs = () => (
-  <div id="sidebar-social">
+  <Col xs='12' id="sidebar-social">
     <h2 className="text-primary">
       <i className="bi bi-hand-thumbs-up-fill me-2"></i>¡Síguenos!
     </h2>
     <div id="social-icons" className="d-flex justify-content-center gradient-primary glassmorphing rounded p-3">
       <RenderSocialIcons />
     </div>
-    <h2 className="text-primary mt-4">
+  </Col>
+);
+
+const RandomTranslation = () => (
+  <Col xs='12' id="random-translation">
+    <h2 className="text-primary">
       <i className="bi bi-star-fill me-2"></i>¿Conoces esta traducción?
     </h2>
-  </div>
+    <div id="social-icons" className="d-flex justify-content-center gradient-primary glassmorphing rounded p-3">
+      <RenderSocialIcons />
+    </div>
+  </Col>
 );
 
 const RenderSocialIcons = () => (
@@ -27,7 +36,10 @@ const SocialIcon = ({ icon, href, text }) => (
 )
 
 const RenderSidebar = () => (
-  <FollowUs />
+  <Row className="gy-3">
+    <FollowUs />
+    <RandomTranslation />
+  </Row>
 )
 
 export default RenderSidebar
