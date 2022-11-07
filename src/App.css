@@ -29,7 +29,7 @@
   
 }
 .tilt-down {
-  transform: rotateZ(2deg);
+  transform: rotateZ(3deg);
   transition: transform 0.5s;
 }
 .tilt-down:hover, .tilt-down:active {
@@ -38,7 +38,7 @@
 }
 
 .tilt-down .carousel-caption {
-  transform: rotateZ(-2deg);
+  transform: rotateZ(-3deg);
   transition: transform 0.5s;
 }
 

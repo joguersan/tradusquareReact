@@ -1,5 +1,6 @@
 import { Row, Col } from 'react-bootstrap'
 import { mediaIcons } from "../constants";
+import { CommentInList } from '../Comments';
 import './Sidebar.css'
 const FollowUs = () => (
   <Col xs='12' id="sidebar-social">
@@ -23,6 +24,35 @@ const RandomTranslation = () => (
   </Col>
 );
 
+const LastComments = () => (
+  <Col xs='12' id="last-comments">
+    <h2 className="text-primary">
+      <i className="bi bi-chat-dots me-2"></i>Últimos comentarios
+    </h2>
+    <Row className="gy-2">
+    <CommentInList
+      classes="col-6 col-sm-12"
+      pfp="images/user_pfp.jpeg"
+      comment="askd askjd asjkd asjkd askjd askdj asqjwd qwod qjd qwknd qwn ds aksd aksd qwkmd qs,ad
+      awdjnqwkjd qwdjq wdkjas dqokwl dwqjqd qjwkd qwjd q"
+      date="28 de junio, 22:00"
+    />
+    <CommentInList
+      classes="col-6 col-sm-12"
+      pfp="images/user_pfp.jpeg"
+      comment="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa"
+      date="Ahora"
+    />
+    <CommentInList
+      classes="col-6 col-sm-12"
+      pfp="images/user_pfp.jpeg"
+      comment="REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+      date="Mañana"
+    />
+    </Row>
+  </Col>
+);
+
 const RenderSocialIcons = () => (
   mediaIcons.map(button =>
     <SocialIcon icon={button.icon} href={button.href} key={button.text} />
@@ -39,6 +69,7 @@ const RenderSidebar = () => (
   <Row className="gy-3">
     <FollowUs />
     <RandomTranslation />
+    <LastComments />
   </Row>
 )
 
