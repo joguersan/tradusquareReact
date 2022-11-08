@@ -1,0 +1,32 @@
+@property --myColor1 {
+  syntax: '<color>';
+  initial-value: rgba(0, 255, 195, 0.4);
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: '<color>';
+  initial-value: rgba(255, 191, 0, 0.4);
+  inherits: false;
+}
+
+.gradient-primary {
+  background: rgb(0, 255, 195);
+  background: linear-gradient(16deg, var(--myColor1), var(--myColor2));
+  transition: --myColor1 1s, --myColor2 1s;
+}
+
+.gradient-primary:hover {
+  --myColor1: rgba(255, 191, 0, 0.5);
+  --myColor2: rgba(0, 255, 195, 0.5);
+}
+
+#sidebar-social a {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+#sidebar-social a:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+}

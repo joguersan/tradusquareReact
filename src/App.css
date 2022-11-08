@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+.h-vh-5 {
+  max-height: 5vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mt-n1 {
+  margin-top: -0.25rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 10s linear;
-  }
+.mt-n3 {
+  margin-top: -1rem !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mt-n5 {
+  margin-top: -5rem !important;
 }
 
-.App-link>.btn {
-  font-size: calc(10px + 2vmin);
+.triangle-up {
+  border-left: 100vw transparent solid;
+  border-bottom: 15vh white solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient-dark {
+  background: rgb(141, 141, 141);
+  background: linear-gradient(0deg, rgb(141, 141, 141) 0%, rgba(33, 37, 41, 1) 100%);
+}
+
+.shadow-down {
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  
+}
+.tilt-down {
+  transform: rotateZ(3deg);
+  transition: transform 0.5s;
+}
+.tilt-down:hover, .tilt-down:active {
+  transform: rotateZ(0deg);
+  transition: transform 0.5s;
+}
+
+.tilt-down .carousel-caption {
+  transform: rotateZ(-3deg);
+  transition: transform 0.5s;
+}
+
+.tilt-down:hover .carousel-caption {
+  transform: rotateZ(0deg);
+  transition: transform 0.5s;
+}
+
+.glassmorphing {
+  /* From https://css.glass */
+/* From https://css.glass */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.7px);
+-webkit-backdrop-filter: blur(8.7px);
 }

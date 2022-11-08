@@ -1,0 +1,14 @@
+.navbar .nav-link {
+  transition: box-shadow 0.5s;
+}
+
+.navbar .nav-link:hover {
+  -webkit-box-shadow: inset 0px -7px 0px 0px rgb(0, 255, 195);
+  -moz-box-shadow: inset 0px -7px 0px 0px rgb(0, 255, 195);
+  box-shadow: inset 0px -7px 0px 0px rgb(0, 255, 195);
+  transition: box-shadow 0.5s;
+}
+
+.navbar .nav-link.active {
+  border-color:red;
+}
