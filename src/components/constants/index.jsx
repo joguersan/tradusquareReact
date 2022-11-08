@@ -43,3 +43,10 @@ export const mainCarousel = [
     captionSubtitle: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
   }
 ]
+
+export const statusColor = [
+  {status: 'finished', color: 'success', icon: '✓'},
+  {status: 'in-progress', color: 'primary', icon: '▶'},
+  {status: 'canceled', color: 'danger', icon: '✗'},
+  {status: 'paused', color: 'warning', icon: '⏸'}
+]

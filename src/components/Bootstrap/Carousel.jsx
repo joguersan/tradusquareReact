@@ -5,8 +5,8 @@ import './Carousel.css'
 export const CarouselItem = ({ image, captionTitle, captionSubtitle }) => (
   <Carousel.Item className="main-carousel active" style={{ background: `url('${image}')` }} key={captionTitle}>
     <Carousel.Caption>
-      <h2 className="bg-dark bg-opacity-75 rounded p-2">{captionTitle}</h2>
-      <p className="bg-dark bg-opacity-75 rounded p-1">{captionSubtitle}</p>
+      <h2 className="bg-dark glassmorphing rounded p-2">{captionTitle}</h2>
+      <p className="bg-dark glassmorphing rounded p-1">{captionSubtitle}</p>
     </Carousel.Caption>
   </Carousel.Item>
 )
@@ -16,8 +16,8 @@ const TSCarousel = () => (
     {mainCarousel.map(element =>
     <Carousel.Item className="main-carousel" style={{ background: `url('${element.image}')` }} key={element.captionTitle}>
       <Carousel.Caption>
-        <h2 className="bg-dark bg-opacity-75 rounded p-2">{element.captionTitle}</h2>
-        <p className="bg-dark bg-opacity-75 rounded p-1">{element.captionSubtitle}</p>
+        <h2 className="bg-dark bg-opacity-50 glassmorphing rounded p-3">{element.captionTitle}</h2>
+        <p className="bg-dark bg-opacity-50 glassmorphing rounded p-1">{element.captionSubtitle}</p>
       </Carousel.Caption>
     </Carousel.Item>
   )}

@@ -8,7 +8,7 @@ import { Col, Row, Container } from 'react-bootstrap';
 const App = () => (
   <div className="App">
     <WebNavbar />
-    <Container fluid className="gradient-dark">
+    <Container fluid className="gradient-dark overflow-hidden">
       <Row>
         <Col sm="10" md="9" lg="6" className="mt-3 mx-auto carousel-container" >
           <TSCarousel>

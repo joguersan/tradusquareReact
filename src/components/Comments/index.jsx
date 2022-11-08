@@ -1,18 +1,18 @@
 import './Comment.css'
 
 export const CommentInList = ({ pfp, comment, date, classes }) => (
-  <div class={`d-flex p-2 ${classes} align-items-center rounded comment-box`}>
-    <div class="flex-shrink-1 me-3">
-      <img src={pfp} class="img-fluid rounded-circle"></img>
+  <div className={`d-flex p-2 ${classes} align-items-center comment-box position-relative`}>
+    <div className="flex-shrink-1 me-3">
+      <img src={pfp} className="img-fluid rounded-circle"></img>
     </div>
-    <div class="w-100 text-break text-truncate">
-      <p class="p-0 m-0">
-        <b><a href="#" class="stretched-link">Persona en título de la noticia</a></b>
+    <div className="w-100 text-break text-truncate">
+      <p className="p-0 m-0">
+        <b><a href="#" className="link-primary text-decoration-none stretched-link">Persona en título de la noticia</a></b>
       </p>
       {comment}
       <div>
-        <small class="text-muted">
-          <i className="bi bi-clock me-2"></i>{date}
+        <small className="text-muted">
+          <i className="bi bi-calendar-event me-1"></i>{date}
         </small>
       </div>
     </div>
