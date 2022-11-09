@@ -6,7 +6,7 @@ export const PlatformStatus = ({ icon, status }) => {
 
   return (
     <div className="rounded-circle border border-4 border-white platformIcon position-relative text-center">
-      <img src={icon} className="img-fluid" />
+      <img src={icon} className="img-fluid" alt="Icono de la consola" />
       <div className={`p-0 m-0 platform-status rounded-circle border border-3 border-white text-white bg-${statusObject.color} platformStatus`}>
         <b className="p-0 m-0">{statusObject.icon}</b>
       </div>
