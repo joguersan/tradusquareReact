@@ -10,9 +10,8 @@ const App = () => (
     <WebNavbar />
     <Container fluid className="gradient-dark overflow-hidden">
       <Row>
-        <Col sm="10" md="9" lg="6" className="mt-3 mx-auto carousel-container" >
-          <TSCarousel>
-          </TSCarousel>
+        <Col xs="10" md="9" lg="6" className="mt-3 mx-auto carousel-container" >
+          <TSCarousel />
         </Col>
         <div className="triangle-up mt-n5"></div>
       </Row>

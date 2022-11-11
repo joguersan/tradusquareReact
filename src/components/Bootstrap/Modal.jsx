@@ -23,7 +23,7 @@ const TSModal = ({ title, content, footer}) => {
         size="lg"
       >
         <Modal.Header closeButton>
-          <Modal.Title>{title}</Modal.Title>
+          <Modal.Title><h1 className="m-0 p-0">{title}</h1></Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {content}

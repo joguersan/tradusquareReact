@@ -46,7 +46,7 @@ export const mainCarousel = [
 
 export const statusColor = [
   {status: 'finished', color: 'success', icon: '✓'},
-  {status: 'in-progress', color: 'primary', icon: '▶'},
+  {status: 'in-progress', color: 'primary', icon: '⚙'},
   {status: 'canceled', color: 'danger', icon: '✗'},
   {status: 'paused', color: 'warning', icon: '⏸'}
 ]
